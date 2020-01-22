@@ -1,12 +1,105 @@
-#nav {
-  list-style-type: none;
-  display: flex;
+* {
+  margin: 0;
   padding: 0;
 }
-#nav li {
-  margin-right: 10px;
+#root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(134, 134, 134);
 }
-
-#users-list {
-  list-style-type: disc;
+#userInfo-game-topScores {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+hr {
+  border-color: black;
+}
+#userInfo-topScores {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 586px;
+}
+#color-hitting {
+  width: 450px;
+  padding: 22px;
+  background-color: rgb(240, 189, 48);
+  box-shadow: 2px 4px 25px black;
+}
+#color-hitting h1 {
+  font-size: 50px;
+  font-family: 'Merienda', cursive;
+  font-weight: bolder;
+}
+#userInfo {
+  background-color: rgb(255, 255, 255);
+  padding: 20px 30px 25px;
+  box-shadow: 2px 4px 25px black;
+  height: 172px;
+  box-sizing: border-box;
+}
+#userInfo h1 {
+  font-family: cursive;
+  color: rgb(83, 83, 83);
+}
+#userInfo h3 {
+  margin: 20px 0 8px;
+  font-family: cursive;
+  font-weight: 500;
+}
+#userInfo input, button {
+  padding: 4px 5px;
+  margin: 0px 10px 4px 0;
+  border-radius: 3px;
+  border: 1px solid darkgray;
+}
+#userInfo input:nth-of-type(2), button {
+  background-color: blue;
+  color: white;
+  border-color: rgb(0, 0, 204);
+  font-weight: bold;
+}
+#main-game-div {
+  width: 420px;
+  background-color: rgb(255, 255, 255);
+  padding: 40px;
+  box-shadow: 2px 4px 25px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#main-game-div:last-child h2 {
+  font-family: cursive;
+}
+#topScores {
+  background-color: white;
+  padding: 20px 30px;
+  box-shadow: 2px 4px 25px black;
+  height: 220px;
+}
+#topScores h1 {
+  font-family: cursive;
+  color: rgb(58, 58, 58);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+#topScores hr {
+  border: 1px solid rgb(202, 202, 202);
+}
+#topScores ol {
+  list-style-type: none;
+  margin-top: 10px;
+}
+#topScores ol li {
+  margin-bottom: 5px;
+  
+  display: flex;
+  justify-content: space-between;
+}
+#topScores ol li h1 {
+  font-size: 16px;
+  font-family: cursive;
 }
